@@ -1396,14 +1396,18 @@ select.form-control { cursor: pointer; }
 .page-hero-eyebrow .ph    { font-size: 0.9rem; }
 .tile-icon .ph            { font-size: 2.4rem; }
 .card-icon .ph            { font-size: 2.2rem; }
-.intro-icon .ph           { font-size: 1.6rem; }
-.news-card-img .ph        { font-size: 3rem; color: rgba(255,255,255,0.9); }
-.contact-card-icon .ph    { font-size: 2rem; }
+
+/* Тёмный фон — иконка белая */
+.intro-icon .ph           { font-size: 1.6rem; color: #fff; }
+.news-card-img .ph        { font-size: 3rem;   color: rgba(255,255,255,0.9); }
+.contact-card-icon .ph    { font-size: 2rem;   color: #fff; }
+.about-visual .ph         { font-size: 2rem;   color: rgba(255,255,255,0.9); }
+
 .link-icon .ph            { font-size: 1.6rem; }
 .tab-btn .ph              { font-size: 1.1rem; }
 .aud-icon .ph             { font-size: 2.4rem; }
 .form-success-icon .ph    { font-size: 3.5rem; color: var(--color-success); }
-.hotline-number-big .ph   { font-size: inherit; vertical-align: middle; }
+.hotline-number-big .ph   { font-size: inherit; vertical-align: middle; color: inherit; }
 .map-placeholder-icon .ph { font-size: 3rem; }
 .btn .ph                  { font-size: 1em; }
 
