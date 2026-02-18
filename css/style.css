@@ -1386,6 +1386,28 @@ select.form-control { cursor: pointer; }
 }
 
 /* ============================================================
+   PHOSPHOR ICONS — RTK Design System
+   ============================================================ */
+
+.ph { line-height: 1; display: inline-flex; align-items: center; }
+
+.site-nav a .ph           { font-size: 1rem; }
+.nav-overlay a .ph        { font-size: 1.3rem; flex-shrink: 0; }
+.page-hero-eyebrow .ph    { font-size: 0.9rem; }
+.tile-icon .ph            { font-size: 2.4rem; }
+.card-icon .ph            { font-size: 2.2rem; }
+.intro-icon .ph           { font-size: 1.6rem; }
+.news-card-img .ph        { font-size: 3rem; color: rgba(255,255,255,0.9); }
+.contact-card-icon .ph    { font-size: 2rem; }
+.link-icon .ph            { font-size: 1.6rem; }
+.tab-btn .ph              { font-size: 1.1rem; }
+.aud-icon .ph             { font-size: 2.4rem; }
+.form-success-icon .ph    { font-size: 3.5rem; color: var(--color-success); }
+.hotline-number-big .ph   { font-size: inherit; vertical-align: middle; }
+.map-placeholder-icon .ph { font-size: 3rem; }
+.btn .ph                  { font-size: 1em; }
+
+/* ============================================================
    ANIMATIONS
    ============================================================ */
 @keyframes fadeInUp {
