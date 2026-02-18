@@ -2,32 +2,37 @@
    ПОДДЕРЖКА ГЕРОЕВ — Design System
    ============================================================ */
 
-/* --- CSS-переменные --- */
+/* --- CSS-переменные (Ростелеком Design System) --- */
 :root {
-  --color-primary:    #1B3A6B;
-  --color-primary-light: #2A5298;
-  --color-gold:       #C8922A;
-  --color-gold-light: #E8B04A;
-  --color-bg:         #FEF9F0;
-  --color-white:      #FFFFFF;
-  --color-text:       #2C2C2C;
-  --color-text-muted: #6B6B6B;
-  --color-border:     #E8DDD0;
-  --color-error:      #C0392B;
-  --color-success:    #27AE60;
+  /* Цвета — Ростелеком токены */
+  --color-primary:       #1b2330;   /* RTK neutral-925 — шапка, футер, тёмные блоки */
+  --color-primary-light: #262e3d;   /* RTK neutral-900 — градиенты */
+  --color-gold:          #ff4f12;   /* RTK base-accent — CTA, акценты */
+  --color-gold-light:    #ff6b3d;   /* RTK accent hover */
+  --color-bg:            #f4f4f5;   /* RTK neutral-25 — фон страницы */
+  --color-white:         #ffffff;
+  --color-text:          #262e3d;   /* RTK neutral-900 */
+  --color-text-muted:    #797e8b;   /* RTK neutral-400 */
+  --color-border:        #e8e8ee;   /* RTK neutral-50 */
+  --color-error:         #ff2626;   /* RTK base-error */
+  --color-success:       #0acb5b;   /* RTK base-success */
 
-  --font-heading: Georgia, 'Times New Roman', serif;
-  --font-body:    system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Типографика — Ростелеком */
+  --font-heading: "Rostelecom Basis", system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body:    "Rostelecom Basis", system-ui, -apple-system, 'Segoe UI', sans-serif;
 
+  /* Радиусы */
   --radius-sm:   6px;
-  --radius-md:   12px;
-  --radius-lg:   20px;
+  --radius-md:   8px;    /* RTK border-radius-base */
+  --radius-lg:   16px;
 
-  --shadow-sm:   0 2px 8px rgba(27, 58, 107, 0.08);
-  --shadow-md:   0 6px 24px rgba(27, 58, 107, 0.13);
-  --shadow-lg:   0 12px 40px rgba(27, 58, 107, 0.18);
+  /* Тени — на основе RTK neutral-990 (#101828) */
+  --shadow-sm:   0 2px 8px rgba(16, 24, 40, 0.08);
+  --shadow-md:   0 6px 24px rgba(16, 24, 40, 0.13);
+  --shadow-lg:   0 12px 40px rgba(16, 24, 40, 0.18);
 
-  --transition:  0.28s ease;
+  /* Анимации — RTK motion */
+  --transition:  200ms ease;   /* RTK motion-duration-s */
   --max-width:   1200px;
 }
 
@@ -299,7 +304,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 80% at 70% 50%, rgba(200,146,42,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 70% 50%, rgba(255,79,18,0.08) 0%, transparent 70%),
     radial-gradient(ellipse 40% 60% at 10% 80%, rgba(255,255,255,0.04) 0%, transparent 60%);
   pointer-events: none;
 }
@@ -314,8 +319,8 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(200,146,42,0.18);
-  border: 1px solid rgba(200,146,42,0.35);
+  background: rgba(255,79,18,0.18);
+  border: 1px solid rgba(255,79,18,0.35);
   color: var(--color-gold-light);
   padding: 6px 16px;
   border-radius: 20px;
@@ -375,13 +380,13 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .btn-gold {
   background: var(--color-gold);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(200,146,42,0.35);
+  box-shadow: 0 4px 16px rgba(255,79,18,0.35);
 }
 
 .btn-gold:hover {
   background: var(--color-gold-light);
   color: #fff;
-  box-shadow: 0 6px 24px rgba(200,146,42,0.45);
+  box-shadow: 0 6px 24px rgba(255,79,18,0.45);
 }
 
 .btn-outline-white {
@@ -632,7 +637,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 }
 
 .vacancy-tag {
-  background: #F0F4FB;
+  background: var(--color-bg);
   color: var(--color-primary);
   padding: 3px 10px;
   border-radius: 4px;
@@ -765,12 +770,12 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   white-space: nowrap;
 }
 
-.tab-btn:hover { color: var(--color-primary); background: rgba(27,58,107,0.04); }
+.tab-btn:hover { color: var(--color-primary); background: rgba(16,24,40,0.04); }
 
 .tab-btn.active {
   color: var(--color-primary);
   border-bottom-color: var(--color-gold);
-  background: rgba(27,58,107,0.04);
+  background: rgba(16,24,40,0.04);
 }
 
 .tab-panel { display: none; animation: fadeIn 0.3s ease; }
@@ -802,9 +807,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   transition: background var(--transition);
 }
 
-.accordion-trigger:hover { background: #F5F9FF; }
+.accordion-trigger:hover { background: #f9f9fa; }
 
-.accordion-trigger[aria-expanded="true"] { background: #F0F5FF; }
+.accordion-trigger[aria-expanded="true"] { background: #f4f4f5; }
 
 .accordion-icon {
   width: 24px;
@@ -1008,8 +1013,8 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 }
 
 .docs-table tr:last-child td { border-bottom: none; }
-.docs-table tr:nth-child(even) td { background: #F8F5F0; }
-.docs-table tr:hover td { background: #F0F4FB; }
+.docs-table tr:nth-child(even) td { background: #f9f9fa; }
+.docs-table tr:hover td { background: var(--color-bg); }
 
 /* ============================================================
    FORM
@@ -1048,7 +1053,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 .form-control:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(27,58,107,0.1);
+  box-shadow: 0 0 0 3px rgba(16,24,40,0.1);
 }
 
 .form-control.error { border-color: var(--color-error); }
@@ -1113,7 +1118,7 @@ select.form-control { cursor: pointer; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(200,146,42,0.1) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(255,79,18,0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1249,7 +1254,7 @@ select.form-control { cursor: pointer; }
 
 /* Info block */
 .info-block {
-  background: #EEF3FB;
+  background: var(--color-bg);
   border-left: 4px solid var(--color-primary);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   padding: 20px 24px;
@@ -1295,7 +1300,7 @@ select.form-control { cursor: pointer; }
 
 /* Map placeholder */
 .map-placeholder {
-  background: linear-gradient(135deg, #E8F0FE, #D4E3FD);
+  background: linear-gradient(135deg, var(--color-bg), #e8e8ee);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   height: 280px;
@@ -1561,7 +1566,7 @@ select.form-control { cursor: pointer; }
   z-index: 200;
   background: var(--color-primary);
   border-top: 3px solid var(--color-gold);
-  box-shadow: 0 -4px 20px rgba(27,58,107,0.25);
+  box-shadow: 0 -4px 20px rgba(16,24,40,0.25);
 }
 
 .sticky-action-bar-inner {
@@ -1648,7 +1653,7 @@ body.has-sticky-bar { padding-bottom: 64px; }
   left: 0;
   right: 0;
   z-index: 98;
-  background: rgba(27,58,107,0.08);
+  background: rgba(16,24,40,0.08);
   height: 4px;
   pointer-events: none;
 }
@@ -1736,7 +1741,7 @@ body.has-sticky-bar { padding-bottom: 64px; }
 
 .audience-btn:hover {
   border-color: var(--color-primary);
-  background: #EEF3FB;
+  background: var(--color-bg);
   color: var(--color-primary);
   transform: translateY(-4px);
   box-shadow: var(--shadow-sm);
@@ -1744,10 +1749,10 @@ body.has-sticky-bar { padding-bottom: 64px; }
 
 .audience-btn.selected {
   border-color: var(--color-gold);
-  background: #FFF8EC;
+  background: rgba(255,79,18,0.07);
   color: var(--color-primary);
   transform: translateY(-4px);
-  box-shadow: 0 0 0 3px rgba(200,146,42,0.18);
+  box-shadow: 0 0 0 3px rgba(255,79,18,0.18);
 }
 
 .audience-result {
@@ -1852,9 +1857,9 @@ body.has-sticky-bar { padding-bottom: 64px; }
   width: 28px;
   height: 28px;
   border-radius: 6px;
-  background: rgba(27,58,107,0.1);
+  background: rgba(16,24,40,0.1);
   color: var(--color-primary);
-  border: 1px solid rgba(27,58,107,0.18);
+  border: 1px solid rgba(16,24,40,0.18);
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.2s;
@@ -1995,8 +2000,8 @@ body.has-sticky-bar { padding-bottom: 64px; }
   gap: 4px;
   font-size: 0.7rem;
   color: var(--color-success);
-  background: rgba(39,174,96,0.1);
-  border: 1px solid rgba(39,174,96,0.25);
+  background: rgba(10,203,91,0.1);
+  border: 1px solid rgba(10,203,91,0.25);
   border-radius: 4px;
   padding: 2px 7px;
   font-weight: 700;
