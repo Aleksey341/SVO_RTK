@@ -212,7 +212,7 @@ function showFormSuccess(form) {
   } else {
     const msg = document.createElement('div');
     msg.className = 'form-success show';
-    msg.innerHTML = `<div class="form-success-icon">✅</div><h3>Спасибо! Сообщение отправлено.</h3><p>Мы свяжемся с вами в ближайшее время.</p>`;
+    msg.innerHTML = `<div class="form-success-icon"><i class="ph ph-check-circle" aria-hidden="true"></i></div><h3>Спасибо! Сообщение отправлено.</h3><p>Мы свяжемся с вами в ближайшее время.</p>`;
     form.replaceWith(msg);
   }
 }
@@ -260,7 +260,7 @@ function initBreadcrumbs() {
   nav.innerHTML = `
     <div class="container">
       <ol class="breadcrumbs-list">
-        <li><a href="index.html">🏠 Главная</a></li>
+        <li><a href="index.html"><i class="ph ph-house-simple" aria-hidden="true"></i> Главная</a></li>
         <li><span>${title}</span></li>
       </ol>
     </div>`;
@@ -282,15 +282,15 @@ function initStickyActionBar() {
   bar.innerHTML = `
     <div class="sticky-action-bar-inner">
       <a href="tel:88000000000">
-        <span class="bar-icon">📞</span>
+        <span class="bar-icon"><i class="ph ph-phone" aria-hidden="true"></i></span>
         <span>Позвонить</span>
       </a>
       <a href="kontakty.html">
-        <span class="bar-icon">✉️</span>
+        <span class="bar-icon"><i class="ph ph-envelope-simple" aria-hidden="true"></i></span>
         <span>Написать</span>
       </a>
       <a href="garantii.html">
-        <span class="bar-icon">⭐</span>
+        <span class="bar-icon"><i class="ph ph-star" aria-hidden="true"></i></span>
         <span>Льготы</span>
       </a>
     </div>`;
@@ -513,27 +513,27 @@ function initAudienceFilter() {
 
   const recs = {
     participant: {
-      label: '✨ Рекомендуем для участника СВО:',
+      label: '<i class="ph ph-sparkle" aria-hidden="true"></i> Рекомендуем для участника СВО:',
       links: [
-        { href: 'garantii.html',       icon: '⭐', text: 'Государственные гарантии' },
-        { href: 'lgoty-kompanii.html', icon: '🛡️', text: 'Льготы компании' },
-        { href: 'poryadok.html',       icon: '📋', text: 'Как оформить льготы' },
+        { href: 'garantii.html',       icon: '<i class="ph ph-star" aria-hidden="true"></i>',           text: 'Государственные гарантии' },
+        { href: 'lgoty-kompanii.html', icon: '<i class="ph ph-shield" aria-hidden="true"></i>',         text: 'Льготы компании' },
+        { href: 'poryadok.html',       icon: '<i class="ph ph-clipboard-text" aria-hidden="true"></i>', text: 'Как оформить льготы' },
       ],
     },
     family: {
-      label: '✨ Рекомендуем для семьи участника:',
+      label: '<i class="ph ph-sparkle" aria-hidden="true"></i> Рекомендуем для семьи участника:',
       links: [
-        { href: 'lgoty-kompanii.html', icon: '👨‍👩‍👧', text: 'Льготы для семей' },
-        { href: 'garantii.html',       icon: '💰',     text: 'Денежные выплаты' },
-        { href: 'kontakty.html',       icon: '📞',     text: 'Получить помощь' },
+        { href: 'lgoty-kompanii.html', icon: '<i class="ph ph-users-three" aria-hidden="true"></i>', text: 'Льготы для семей' },
+        { href: 'garantii.html',       icon: '<i class="ph ph-coins" aria-hidden="true"></i>',       text: 'Денежные выплаты' },
+        { href: 'kontakty.html',       icon: '<i class="ph ph-phone" aria-hidden="true"></i>',       text: 'Получить помощь' },
       ],
     },
     employer: {
-      label: '✨ Рекомендуем для работодателя:',
+      label: '<i class="ph ph-sparkle" aria-hidden="true"></i> Рекомендуем для работодателя:',
       links: [
-        { href: 'trudoustrojstvo.html', icon: '💼', text: 'Трудоустройство ветеранов' },
-        { href: 'lgoty-kompanii.html',  icon: '🛡️', text: 'Корпоративные льготы' },
-        { href: 'kariera.html',         icon: '🎓', text: 'Программы обучения' },
+        { href: 'trudoustrojstvo.html', icon: '<i class="ph ph-briefcase" aria-hidden="true"></i>',     text: 'Трудоустройство ветеранов' },
+        { href: 'lgoty-kompanii.html',  icon: '<i class="ph ph-shield" aria-hidden="true"></i>',        text: 'Корпоративные льготы' },
+        { href: 'kariera.html',         icon: '<i class="ph ph-graduation-cap" aria-hidden="true"></i>', text: 'Программы обучения' },
       ],
     },
   };
